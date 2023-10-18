@@ -112,6 +112,7 @@ button {
     grid-template-columns: repeat(2, 1fr);
     padding-bottom: unset;
     font-size: 20px;
+    border-radius: 12px;
   }
 
   .card {
@@ -130,6 +131,8 @@ button {
   .image {
     height: 100%;
     width: 100%;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
   }
 
   button {
