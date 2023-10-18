@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap");
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+}
+body {
+  background-color: hsl(30, 38%, 92%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* height: 100vh; */
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+  color: hsl(228, 12%, 48%);
+  border-radius: 1rem;
+}
+
+p {
+  line-height: 1.5rem;
+  font-weight: 400;
+}
+
+h1 {
+    font-family:"Fraunces", serif ;
+    color: hsl(212, 21%, 14%);
+    font-weight: 700;
+}
+
+.container {
+  background-color: hsl(0, 0%, 100%);
+  text-align: left;
+  padding-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.image {
+  overflow: hidden;
+  width: 100vw;
+  height: 100%;
+}
+
+/* .img_desktop {
+    width: 100%; 
+    max-height: 100%;  */
+
+.perfume {
+  letter-spacing: 0.5rem;
+  text-transform: uppercase;
+}
+
+.card {
+  padding: 0.5rem 2rem;
+}
+
+button img {
+  margin-right: px;
+}
+
+.amount {
+  position: absolute;
+}
+
+.prices {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+button {
+  background-color: hsl(158, 36%, 37%);
+  border: none;
+  border-radius: 5px;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 40px;
+  width: 100%;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.current {
+  font-size: 35px;
+  color: hsl(158, 36%, 37%);
+  font-family: "Fraunces", serif;
+  font-weight: 700;
+}
+
+@media screen and (min-width: 650px) {
+  body {
+    margin-top: 5rem;
+  }
+
+  h1 {
+    max-width: 10ch;
+    margin: 2rem 0;
+    font-weight: 700;
+  }
+
+  .perfume {
+    margin-top: 2rem;
+  }
+  .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding-bottom: unset;
+    font-size: 20px;
+  }
+
+  .card {
+    padding-top: 2rem;
+    /* align-self: center;  */
+    justify-self: center;
+  }
+
+  .card p {
+    max-width: 25ch;
+    line-height: 2rem;
+    margin-bottom: 2rem;
+    font-size: 25px;
+  }
+  
+  .image {
+    height: 100%;
+    width: 100%;
+  }
+
+  button {
+    padding: 2rem;
+  }
+
+  .current {
+    font-size: 120px;
+    color: hsl(158, 36%, 37%);
+    font-family: "Fraunces", serif;
+    font-weight: 700;
+  }
+}
